@@ -89,4 +89,3 @@ knitr::include_graphics("Rose_Diagram.jpg")
 * Florence Nightingale’s Rose Diagram: https://rpubs.com/chidungkt/819554
 * Nightingale Dataset: https://github.com/vincentarelbundock/Rdatasets/blob/master/csv/HistData/Nightingale.csv
 
-#test
