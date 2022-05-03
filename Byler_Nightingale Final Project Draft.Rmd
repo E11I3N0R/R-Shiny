@@ -1,0 +1,92 @@
+---
+title: "Final Project Draft"
+author: "Ellie Byler"
+date: "5/3/2022"
+urlcolor: blue
+output:
+   pdf_document:
+     keep_tex: true
+classoption: dvipsnames
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, tidy.opts=list(width.cutoff=50),tidy=TRUE) 
+```
+
+# \textcolor{WildStrawberry}{INTRODUCTION}
+
+
+## \textcolor{TealBlue}{What:}
+
+I would like to explore recreating data visualizations based on Florence Nightingale's pioneering work in the field in an R Shiny dashboard.
+
+## \textcolor{TealBlue}{Why:}
+
+Florence Nightingale is arguably the mother of data viz, and it would be interesting to see what sort of modern data visualizations I can create using her historical data.
+
+## \textcolor{TealBlue}{How:}
+
+I will use R Shiny to create a (hopefully interactive) dashboard with data visualizations using Florence Nightingale's dataset. The dataset is available here:   https://github.com/vincentarelbundock/Rdatasets/blob/master/csv/HistData/Nightingale.csv
+
+## \textcolor{TealBlue}{Minimal:} 
+
+I would like to create an R Shiny dashboard with a recreation of the original rose diagram (see image below) and one or two other examples of the same data using different chart formats (e.g. bar and line).
+
+## \textcolor{TealBlue}{Ambitious:} 
+
+Ideally, I would like to accomplish all of the above, plus add more visualizations for other aspects of the dataset using at least three different interactive Shiny tools/widgets (https://shiny.rstudio.com/gallery/widget-gallery.html). I'd like to include a relevant discussion of Florence Nightingale's contributions to data viz and how historical best practices for visualizations compare to modern ones.
+
+\newpage
+
+# \textcolor{WildStrawberry}{BODY}
+
+### *Florence Nightingale's Original Rose Diagram & Explanatory Text:*
+
+DIAGRAM of the CAUSES of MORTALITY in the ARMY in the EAST
+
+Figure 1: APRIL 1854 to MARCH 1855  
+Figure 2: APRIL 1855 to MARCH 1856
+
+```{r, echo=FALSE, fig.align = "center", out.width="90%"}
+knitr::include_graphics("Rose_Diagram.jpg")
+```
+
+* The areas of the \textcolor{MidnightBlue}{blue}, \textcolor{Sepia}{red}, & black wedges are each measured from the center as the common vortex.
+* The \textcolor{MidnightBlue}{blue} wedges measured from the center of the circle represent area for area the deaths from \textcolor{MidnightBlue}{Preventable or Mitigable Zymotic diseases}, the \textcolor{Sepia}{red} wedges measured from the center the deaths from \textcolor{Sepia}{wounds}, & the black wedges measured from the center the deaths from all other causes.
+* The black line across the \textcolor{Sepia}{red} triangle in Nov. 1854 marks the boundary of the deaths from all other causes during the month.
+* In October 1854 & April 1855, the black area coincides with the the \textcolor{Sepia}{red}, in January & February 1856, the \textcolor{MidnightBlue}{blue} coincides with the black.
+* The entire areas may be compared by following the \textcolor{MidnightBlue}{blue}, the \textcolor{Sepia}{red}, & the black lines enclosing them.
+
+\newpage
+
+# \textcolor{WildStrawberry}{TOPICS FROM CLASS}
+
+
+## \textcolor{TealBlue}{1. Github:}
+*TBD*
+
+## \textcolor{TealBlue}{2. R Markdown:}
+*TBD*
+
+## \textcolor{TealBlue}{3. R Shiny:}
+*TBD*
+
+## \textcolor{TealBlue}{4. Tidyverse:}
+*TBD*
+
+## \textcolor{TealBlue}{5. Regex:}
+*TBD*
+
+\newpage
+
+# \textcolor{WildStrawberry}{CONCLUSION}
+
+*TBD*
+
+# \textcolor{WildStrawberry}{SOURCES}
+
+* Mathematics of the Coxcombs: http://understandinguncertainty.org/node/214
+* Florence Nightingale’s Rose Diagram: https://rpubs.com/chidungkt/819554
+* Nightingale Dataset: https://github.com/vincentarelbundock/Rdatasets/blob/master/csv/HistData/Nightingale.csv
+
+
