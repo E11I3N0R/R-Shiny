@@ -1,4 +1,4 @@
-# 
+# INTRODUCTION
 
 **[Florence
 Nightingale](https://en.wikipedia.org/wiki/Florence_Nightingale)**
@@ -18,13 +18,13 @@ allowed her to proscribe a solution instead of merely describing the
 problem. She became the first female member elected to the Royal
 Statistical Society in 1859.
 
-## 
+## What:
 
 My goal for this project was to create an R Shiny dashboard celebrating
 Florence Nightingale’s contributions to stats and data analysis and
 exploring her work.
 
-## 
+## Why:
 
 Florence Nightingale is arguably the mother of data viz, and I thought
 it would be interesting to see what sort of modern data visualizations I
@@ -34,21 +34,21 @@ I also wanted more people to know about this amazing woman who deserves
 a place next to Ada Lovelace in the pantheon of influential women in
 STEM.
 
-## 
+## How:
 
 Using Florence Nightingale’s data that she collected during her time at
 the military hospital, I created a web app using R Shiny that allows
 users to see her original data visualizations next to modern
 recreations.
 
-# 
+# CREATING THE APP
 
 **Link to the app:
 <https://e11i3n0r.shinyapps.io/631-EllieByler-FinalProject/>**
 
 <img src="app_landing_page.png" width="100%" style="display: block; margin: auto;" />
 
-## 
+## Getting Started:
 
 Creating an app using R Shiny is surprisingly simple. First, install the
 Shiny package using `install.packages("shiny")` in your R console.
@@ -59,8 +59,7 @@ folder directory on your computer.
 
 Here is the minimal code necessary to create a functioning app:
 
-    # use install.packages('shiny') first if it's not
-    # installed
+    # use install.packages('shiny') first if it's not installed
 
     library(shiny)
 
@@ -79,7 +78,7 @@ and complexity. I was able to format a navigation sidebar, include data
 tables and graphs, embed videos and audio, and use a custom theme
 ([Bootswatch: “Minty”](https://bootswatch.com/minty/)) and fonts.
 
-## 
+## Cleaning and Prepping the Data:
 
 I found a dataset on Github of Florence Nightingale’s data collected
 over two years during her time as a nurse in the Crimean War. It is a
@@ -137,10 +136,9 @@ This refers to when a Sanitary Commission arrived at the hospital in
 March 1855 to help implement hygiene practices that drastically reduced
 preventable deaths from disease among wounded soldiers.
 
-## 
+## Data Visualizations:
 
-For reference, I’ve included the graphic that inspired this project on
-the next page: Nightingale’s famous chart depicting the causes of
+For reference, I’ve included the graphic that inspired this project below: Nightingale’s famous chart depicting the causes of
 mortality in the British army during the Crimean War from April 1854 to
 March 1856. This *rose diagram* is alternatively called a *coxcomb* or a
 *polar area chart*.
@@ -154,17 +152,15 @@ Figure 2: APRIL 1855 to MARCH 1856
 
 <img src="Rose_Diagram_rmd.jpg" width="90%" style="display: block; margin: auto;" />
 
--   The areas of the , , & black wedges are each measured from the
+-   The areas of the blue, red, & black wedges are each measured from the
     center as the common vortex.
--   The wedges measured from the center of the circle represent area for
-    area the deaths from , the wedges measured from the center the
-    deaths from , & the black wedges measured from the center the deaths
-    from all other causes.
--   The black line across the triangle in Nov. 1854 marks the boundary
+-   The blue wedges measured from the center of the circle represent area for
+    area the deaths from Preventable or Mitigable Zymotic diseases, the red wedges measured from the center the deaths from wounds, & the black wedges measured from the center the deaths from all other causes.
+-   The black line across the red triangle in Nov. 1854 marks the boundary
     of the deaths from all other causes during the month.
 -   In October 1854 & April 1855, the black area coincides with the the
-    , in January & February 1856, the coincides with the black.
--   The entire areas may be compared by following the , the , & the
+    red, in January & February 1856, the blue coincides with the black.
+-   The entire areas may be compared by following the blue, the red, & the
     black lines enclosing them.
 
 ### *Modern Recreation of the Rose Diagram*
@@ -198,7 +194,7 @@ chart with polar coordinates.
         size = 10)) + theme(strip.text = element_text(color = "black",
         size = 12, face = "bold", hjust = 0.5))
 
-<img src="README_files/figure-markdown_strict/modern rose1-1.png" width="90%" style="display: block; margin: auto auto auto 0;" />
+<img src="modern_rose_diagram.png" width="90%" style="display: block; margin: auto auto auto 0;" />
 
 ### *Combined Rose Diagram: 24 Months*
 
@@ -232,7 +228,7 @@ diagram code from above instead.
         size = 12, face = "bold")) + theme(legend.text = element_text(color = "black",
         size = 10))
 
-<img src="README_files/figure-markdown_strict/combo rose-1.png" width="90%" style="display: block; margin: auto auto auto 0;" />
+<img src="combined_rose_diagram.png" width="90%" style="display: block; margin: auto auto auto 0;" />
 
 I also created two modern charts using the same dataset: a bar chart
 comparing deaths from all three causes (`Disease`, `Wounds`, `Other`)
@@ -241,9 +237,9 @@ that explores the trend in preventable deaths from disease over the two
 year period. These charts can be seen on the Shiny app website:
 <https://e11i3n0r.shinyapps.io/631-EllieByler-FinalProject/>
 
-# 
+# TOPICS FROM CLASS
 
-## 
+## 1. Github:
 
 Github is a skill that I had been meaning to learn at some point, but I
 never had a good opportunity to do it until this class. There are still
@@ -253,7 +249,7 @@ account set up will be useful for any future coding projects I do, and I
 like having the project for this course publicly available in case I
 would like to use it in a portfolio.
 
-## 
+## 2. R Markdown:
 
 We have obviously been using R Markdown all semester, and I’ve really
 gotten the hang of it. However, I never realized how specific of a
@@ -264,7 +260,7 @@ work in the pdf. I’ve used flavors of Markdown on other sites (e.g.,
 Discord and Slack use some variation of Markdown to let you format text
 as bold, italic, etc.).
 
-## 
+## 3. R Shiny:
 
 This project wouldn’t have existed without R Shiny. We didn’t cover this
 topic in class, but I had noticed the option in the File menu to create
@@ -276,7 +272,7 @@ wanted, but there were numerous detailed web resources. I thought it was
 interesting that a lot of the code is actually html that is generated by
 R.
 
-## 
+## 4. Tidyverse (ggplot2, dplyr, tidyr, stringr, etc.):
 
 The tidyverse package was integral to my project. The time we spent in
 class going over how to use `ggplot` aided my comprehension of the code
@@ -291,7 +287,7 @@ but need to be installed separately. These include `readxl` for loading
 in the `.xlsx` data, `lubridate` for handling dates, and `magrittr` for
 providing the special tidyverse pipe `%>%`.
 
-## 
+## 5. Assorted other topics: Regex, MathJax, Bootstrap, etc.:
 
 I was a little surprised by how many other topics I ended up using in my
 project. These were topics that weren’t covered in class, but are easy
@@ -314,7 +310,7 @@ And lastly, I used Bootstrap to customize my website using the object
 `bslib::bs_theme()` and a theme called “Minty” from
 [bootswatch.com](https://bootswatch.com/).
 
-# 
+# CONCLUSION
 
 Overall, I am very pleased with how this app turned out. I’ve created
 websites before using website creation platforms before, but this is the
@@ -338,7 +334,7 @@ recreates Florence Nightingale’s rose diagram, explains the historical
 context, and leaves the user with a better appreciation of this
 remarkable woman.
 
-# 
+# SOURCES
 
 -   **Mathematics of the Coxcombs:**  
     <http://understandinguncertainty.org/node/214>
