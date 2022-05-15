@@ -77,6 +77,8 @@ knitr::include_graphics("Rose_Diagram.jpg")
 ## \textcolor{TealBlue}{5. Regex:}
 *TBD*
 
+other topics: MathJax, Boostrap, etc.
+
 \newpage
 
 # \textcolor{WildStrawberry}{CONCLUSION}
