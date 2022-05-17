@@ -386,7 +386,15 @@ ui <- fluidPage(
                 "Florence Nightingale's Full Report (1859)")),
               
               tags$li(tags$a(href="https://www.r-bloggers.com/2013/02/extracting-the-epidemic-model-going-beyond-florence-nightingale-part-ii/", 
-                "Going Beyond Florence Nightingale Part II: Extracting the Epidemic Model"))
+                "Going Beyond Florence Nightingale Part II: Extracting the Epidemic Model")),
+              
+              tags$li(tags$a(href="https://nursingclio.org/2020/11/05/the-racist-lady-with-the-lamp/", 
+                "The Racist Lady with the Lamp")),
+              "It's important to acknowledge this side of Florence Nightingale as well.",
+              
+              tags$li(tags$a(href="https://medium.com/nightingale/credit-where-credit-is-due-mary-eleanor-spear-6a7a1951b8e6", 
+                "Credit Where Credit is Due: Mary Eleanor Spear")),
+              "Another important female data viz pioneer!"
             )
         )
       ),
